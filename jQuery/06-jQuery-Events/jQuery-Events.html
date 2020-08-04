@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Events</title>
+</head>
+
+<body>
+
+    <!-- ###### jQuery Events ###### -->
+
+    <!-- ================================= -->
+
+    <!-- jQuery has alot of event methods
+		 But  most common methods
+		 -  .click() - jQuery click() method is a quick and easy way to add a click listener to element(s)
+		 -  .keypress() - jQuery keypress() method is a quick and easy way to add a keypress listener to element(s)
+		 -  .on() - jQuery on() works similarly to addEventListener. It lets you specify the type of event to listen for
+	-->
+
+    <!-- event object ==> it will contain all the information about the keypress event, it gives a char code of the key that was pressed-->
+
+    <!-- NOTE: since we are using jQuery Object i.e. .css() we have to use $(this) -->
+
+    <!-- Why Use on() ???
+			-  In most cases, click() and on('click') will both get job done. HOWEVER, there is one key difference
+			- click() only adds listeners for existing elements
+			- on() will add  listeners for all potential future elements 
+	-->
+
+    <div>
+        <h1>jQuery Events</h1>
+
+        <h2>Click</h2>
+        <h2>Click</h2>
+        <h2>Click</h2>
+
+        <input type="text">
+
+        <button>Don't click me</button>
+        <button>Seriously don't click me</button>
+        <button>This is your last warning</button>
+    </div>
+
+    <!-- ================================= -->
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="./jQuery-Events.js"></script>
+
+</body>
+
+</html>
