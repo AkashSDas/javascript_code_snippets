@@ -17,7 +17,7 @@
 function House(bedrooms, bathrooms, numSqft){
   this.bedrooms = bedrooms;
   this.bathrooms = bathrooms;
-  this numSqft = numSqft;
+  this.numSqft = numSqft;
 }
 
 // Capitaliztions of the function name - this is a convention
