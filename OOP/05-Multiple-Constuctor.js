@@ -41,7 +41,7 @@ function Motorcycle(make, model, year){
 
 function Motorcycle(make, model, year){
   // using apply
-  Car.call(this, [make, model, year]);
+  Car.apply(this, [make, model, year]);
   this.numberWheels = 2;
 }
 
